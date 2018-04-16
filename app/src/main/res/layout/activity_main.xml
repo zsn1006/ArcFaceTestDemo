@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dc.arcfacetestdemo.MainActivity">
+<LinearLayout
+    android:id="@+id/ll_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+
+        android:hint="名字"/>
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+       />
+</LinearLayout>
+    <Button
+        android:id="@+id/upStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传单张图片至服务器"
+        android:layout_below="@+id/ll_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取服务器多张图片-->注册"
+        android:layout_below="@+id/upStr"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/detecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="识别人脸"
+        android:layout_below="@+id/register"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>
